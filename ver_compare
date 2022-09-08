@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ "$1" == "$2" ]] ; then
+    printf "%s\n" "same"
+elif printf "%s\n%s" "$1" "$2" | sort -fCV ; then
+    printf "%s\n" "lower"
+else
+    printf "%s\n" "higher"
+fi
