@@ -2,7 +2,7 @@
 if [[ "$1" == "$2" ]] ; then
     printf "%s\n" "same"
 elif printf "%s\n%s" "$1" "$2" | sort -fCV ; then
-    printf "%s\n" "lower"
+    printf "%s\n" "lower" # $1 has a lower version than $2
 else
     printf "%s\n" "higher"
 fi
