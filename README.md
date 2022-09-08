@@ -1,0 +1,2 @@
+# dotsh
+shell scripts
